@@ -160,14 +160,53 @@ canvas, img.preview, svg {
   main, header { padding: 16px; }
 }</style>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"InstaFilterLab","description":"Apply social-style photo filters instantly and export high quality images.","applicationCategory":"UtilitiesApplication","operatingSystem":"Any","url":"https://instafilterlab.web.app"}</script>
+<style id="round2-style">
+body.theme-shell::before, body.theme-shell::after {
+  content:"";
+  position:fixed;
+  z-index:-1;
+  width:320px;
+  height:320px;
+  border-radius:44% 56% 65% 35% / 50% 63% 37% 50%;
+  background:linear-gradient(129deg, #e9644322, #4a90e222);
+  filter: blur(1px);
+}
+body.theme-shell::before { top:-90px; right:-90px; }
+body.theme-shell::after { bottom:-110px; left:-110px; }
+.tool-ribbon {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 12px;
+  margin:0 0 12px;
+  border:1px solid color-mix(in srgb, #e96443 32%, #ffffff);
+  background:linear-gradient(120deg, #e9644314, #4a90e210);
+  border-radius:12px;
+  font-weight:700;
+  letter-spacing:.2px;
+}
+.ribbon-ic {
+  width:18px;
+  height:18px;
+  stroke:color-mix(in srgb, #e96443 65%, #102030);
+  fill:none;
+  stroke-width:1.9;
+}
+header h1 { position: relative; z-index: 1; }
+header .sub { position: relative; z-index: 1; }
+main { position: relative; overflow: visible; }
+button { min-height: 42px; }
+.theme-shell main{display:grid;gap:14px}.theme-shell main>.tool-ribbon{order:-1}
+</style>
 </head>
-<body>
+<body class="theme-shell">
   <div class="container">
     <header>
       <h1>Instagram Style Color Filters</h1>
       <p class="sub">Apply social-style photo filters instantly and export high quality images.</p>
     </header>
     <main>
+      <div class="tool-ribbon"><svg viewBox="0 0 24 24" class="ribbon-ic"><rect x="4" y="4" width="16" height="16" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r="1"/></svg><span>Social Filter Studio</span></div>
       <input id="file" type="file" accept="image/*">
     <div class="grid two" style="margin-top:10px"><select id="preset"><option value="normal">Normal</option><option value="clarendon">Clarendon</option><option value="gingham">Gingham</option><option value="lark">Lark</option><option value="juno">Juno</option></select><button id="apply">Apply Filter</button></div>
     <button id="save" style="margin-top:10px">Download</button>
