@@ -1,1 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0d6efd"/><stop offset="1" stop-color="#1ba19b"/></linearGradient></defs><rect width="64" height="64" rx="14" fill="url(#g)"/><text x="50%" y="56%" text-anchor="middle" font-size="25" font-family="Arial" fill="#fff">IN</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="InstaFilterLab favicon">
+  <defs>
+    <linearGradient id="bg" x1="10" y1="6" x2="54" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#71d7c7"/>
+      <stop offset="0.55" stop-color="#8aa8ff"/>
+      <stop offset="1" stop-color="#ff9d5c"/>
+    </linearGradient>
+    <linearGradient id="lens" x1="21" y1="20" x2="43" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#f4fbff"/>
+      <stop offset="1" stop-color="#cbdaf7"/>
+    </linearGradient>
+  </defs>
+  <rect x="4" y="4" width="56" height="56" rx="18" fill="#08111b"/>
+  <rect x="7" y="7" width="50" height="50" rx="15" fill="url(#bg)"/>
+  <rect x="15" y="18" width="34" height="28" rx="9" fill="#0c1726" fill-opacity=".88" stroke="#e8f2ff" stroke-opacity=".22" stroke-width="1.5"/>
+  <path d="M23 18.5l2.5-4h13L41 18.5" fill="#0c1726" fill-opacity=".88"/>
+  <circle cx="32" cy="32" r="10.5" fill="url(#lens)"/>
+  <circle cx="32" cy="32" r="6.5" fill="#12243b"/>
+  <path d="M32 21.5A10.5 10.5 0 0 1 42.5 32" fill="none" stroke="#71d7c7" stroke-width="3" stroke-linecap="round"/>
+  <path d="M42.5 32A10.5 10.5 0 0 1 32 42.5" fill="none" stroke="#8aa8ff" stroke-width="3" stroke-linecap="round"/>
+  <path d="M32 42.5A10.5 10.5 0 0 1 21.5 32" fill="none" stroke="#ff9d5c" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="43.5" cy="23.5" r="2.5" fill="#f6fbff"/>
+  <path d="M19 47.5h26" stroke="#f6fbff" stroke-opacity=".18" stroke-width="2" stroke-linecap="round"/>
+</svg>
